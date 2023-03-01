@@ -21,7 +21,7 @@ const displayCountries = (countries) => {
             <div class="col-md-4">
               <img src="${
                 country.flags.svg
-              }" class="img-fluid rounded-start rounded-end" alt="There is a image of flag.">
+              }" class="img-fluid" alt="There is a image of flag.">
             </div>
 
             <div class="col-md-8">
