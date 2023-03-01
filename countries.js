@@ -3,14 +3,12 @@ const loadCountries = async () => {
     const response = await fetch("https://restcountries.com/v3.1/all");
     const data = await response.json();
     displayCountries(data);
-    // console.log (data[0].name.official);
   } catch (error) {
-    console.error(error);
+    console.log(error);
   }
 };
 
 const displayCountries = (countries) => {
-  console.log(countries);
   const countriesContainer = document.getElementById("countries");
   countries.forEach((country) => {
     const countryDiv = document.createElement("div");
